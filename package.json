@@ -9,10 +9,14 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@babel/runtime": "^7.22.5",
+    "@expo/metro-config": "^0.7.1",
     "@expo/vector-icons": "^13.0.0",
     "@expo/webpack-config": "^18.0.1",
     "@react-native-community/art": "^1.2.0",
+    "@react-native-community/cli-server-api": "^11.3.2",
     "@react-native-community/masked-view": "^0.1.11",
+    "@react-native/normalize-color": "^2.1.0",
     "@react-navigation/bottom-tabs": "^6.5.7",
     "dotnetify": "^5.4.0",
     "expo": "~48.0.18",

@@ -6,12 +6,12 @@ const url = "http://10.200.23.27:5002/Api/Producao/Apontamento"
 
 let payload = []
 
-// payload = {
-//   Company: "1",
-//   Nr_ini: "1",
-//   Nr_fin: "9999999",
-//   Dt_ini: "2023-06-01T03:00:00.000",
-//   Dt_fin: "2023-06-14T03:00:00.000"}
+payload = {
+  Company: "1",
+  Nr_ini: "1",
+  Nr_fin: "9999999",
+  Dt_ini: "2023-06-01T03:00:00.000",
+  Dt_fin: "2023-06-14T03:00:00.000"}
 
 
 export default class Chamada extends React.PureComponent {
@@ -44,6 +44,6 @@ catch (error) {
   render() {
     console.log('TESTE')
     return (
-      this.state.dataSource
+      this.state.renderItem()
     )
   }  }
