@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { StyleSheet, Text, View } from 'react-native';
-import Chamada from './Chamada'
 
+import AppList from './AppList';
 import AppForm from './AppForm';
+import Chamada from './Chamada';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -28,16 +28,8 @@ function AppTab() {
                     tabBarIconStyle: { display: "none" }
                 }}
             >
-                <Screen name="Chamada" component={Chamada}
-    options={{
-        tabBarLabel: "Chamada"
-    }}
-/>
-<Screen name="AppForm" component={AppForm}
-    options={{
-        tabBarLabel: "Adicionar"
-    }}
-/>
+                <Screen name="Litagem OP" component={Chamada} />
+                <Screen name="Buscar OP" component={AppForm} />
             </Navigator>
         </NavigationContainer>
     );
